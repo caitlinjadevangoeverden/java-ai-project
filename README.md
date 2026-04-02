@@ -1,39 +1,57 @@
-# java-ai-project
-Created an AI code that plays the game "Clue"
+# Clue Logic Solver (Java)
 
-# 🤖 Java AI Project
+## Overview
+This project is a logic-based inference engine written in Java that simulates reasoning for a murder mystery scenario inspired by the game "Clue".
 
-## 📌 Overview
-This project is a Java-based application that applies artificial intelligence concepts to solve problems using efficient algorithms and structured logic.
+The program processes structured logical constraints and generates all valid deductions based on given rules.
 
-## 🎯 Features
-- AI-based logic and decision-making
-- Efficient data processing
-- Clean object-oriented design
+---
 
-## 🛠️ Tech Stack
-- Java
-- OOP
-- Data Structures & Algorithms
+## Features
+- Logical inference system using predicate-style rules
+- Reads structured input data from file
+- Generates derived logical statements automatically
+- Outputs results to a file for analysis
+- Demonstrates file handling and programmatic reasoning in Java
 
-## ⚙️ How to Run
-1. Clone the repo:
-   git clone https://github.com/yourusername/java-ai-project.git
+---
 
-2. Open in terminal:
-   cd java-ai-project
+## How It Works
+1. The program loads input constraints from a text file
+2. Logical rules are evaluated using nested loops and condition checks
+3. Valid conclusions are derived based on consistency rules
+4. Results are written to an output file
 
-3. Compile:
-   javac Main.java
+---
 
-4. Run:
-   java Main
+## Project Structure
+src/ClueProgram.java
+input/inputmurder3.txt
+output/results.txt
 
-## 🧠 What I Learned
-- Applying AI concepts in Java
-- Structuring scalable code
-- Debugging and optimizing logic
 
-## 📈 Future Improvements
-- Add GUI
-- Improve performance
+---
+
+## How to Run
+
+### Compile:
+javac src/ClueProgram.java
+
+
+### Run:
+java -cp src ClueProgram
+
+
+---
+
+## Skills Demonstrated
+- Java programming
+- File I/O handling
+- Algorithmic thinking
+- Logical reasoning systems
+- Data processing pipelines
+
+---
+
+## Author
+Caitlin van Goeverden
