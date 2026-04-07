@@ -1,0 +1,595 @@
+
+======================================
+ CLUE GAME RESULTS
+======================================
+
+======================================
+ PLAYER SETUP
+======================================
+MissScarlett holds:
+  • MrsWhite
+  • Library
+  • Study
+
+--------------------------------------------------
+
+
+======================================
+ MURDER 1
+======================================
+
+*************** ROUND 0 ***************
+
+--------------------------------------------------
+SUGGESTION REPORT
+--------------------------------------------------
+Detective : MissScarlett
+
+[THEORY]
+  Suspect : MissScarlett
+  Weapon  : Rope
+  Room    : Lounge
+Evidence added:
+ + suspect: MissScarlett
+ + weapon: Rope
+ + room: Lounge
+
+[REFUTATION]
+Refuted by : ColMustard
+Card shown : MissScarlett
+
+[DEDUCTION]
+Eliminated suspect: MissScarlett
+--------------------------------------------------
+
+
+*************** ROUND 1 ***************
+
+--------------------------------------------------
+SUGGESTION REPORT
+--------------------------------------------------
+Detective : ColMustard
+
+[THEORY]
+  Suspect : MrsPeacock
+  Weapon  : Pipe
+  Room    : DiningRoom
+Evidence added:
+ + suspect: MrsPeacock
+ + weapon: Pipe
+ + room: DiningRoom
+
+[REFUTATION]
+Refuted by : MrsPeacock
+Card shown : (unknown)
+
+[DEDUCTION]
+Refutation occurred but no card information gained.
+--------------------------------------------------
+
+
+*************** ROUND 2 ***************
+
+--------------------------------------------------
+SUGGESTION REPORT
+--------------------------------------------------
+Detective : MrsWhite
+
+[THEORY]
+  Suspect : ColMustard
+  Weapon  : Revolver
+  Room    : Ballroom
+Evidence added:
+ + suspect: ColMustard
+ + weapon: Revolver
+ + room: Ballroom
+
+[REFUTATION]
+Refuted by : MrsPeacock
+Card shown : (unknown)
+
+[DEDUCTION]
+Refutation occurred but no card information gained.
+--------------------------------------------------
+
+
+*************** ROUND 3 ***************
+
+--------------------------------------------------
+SUGGESTION REPORT
+--------------------------------------------------
+Detective : MrGreen
+
+[THEORY]
+  Suspect : MrsWhite
+  Weapon  : Knife
+  Room    : Ballroom
+Evidence added:
+ + suspect: MrsWhite
+ + weapon: Knife
+ + room: Ballroom
+
+[REFUTATION]
+Refuted by : ProfPlum
+Card shown : (unknown)
+
+[DEDUCTION]
+Refutation occurred but no card information gained.
+--------------------------------------------------
+
+
+*************** ROUND 4 ***************
+
+--------------------------------------------------
+SUGGESTION REPORT
+--------------------------------------------------
+Detective : MrsPeacock
+
+[THEORY]
+  Suspect : MrGreen
+  Weapon  : Candlestick
+  Room    : DiningRoom
+Evidence added:
+ + suspect: MrGreen
+ + weapon: Candlestick
+ + room: DiningRoom
+
+[REFUTATION]
+Refuted by : MrsWhite
+Card shown : (unknown)
+
+[DEDUCTION]
+Refutation occurred but no card information gained.
+--------------------------------------------------
+
+
+*************** ROUND 5 ***************
+
+--------------------------------------------------
+SUGGESTION REPORT
+--------------------------------------------------
+Detective : ProfPlum
+
+[THEORY]
+  Suspect : MrsWhite
+  Weapon  : Wrench
+  Room    : Study
+Evidence added:
+ + suspect: MrsWhite
+ + weapon: Wrench
+ + room: Study
+
+[REFUTATION]
+Refuted by : MissScarlett
+Card shown : MrsWhite
+
+[DEDUCTION]
+Eliminated suspect: MrsWhite
+--------------------------------------------------
+
+
+*************** ROUND 6 ***************
+
+--------------------------------------------------
+SUGGESTION REPORT
+--------------------------------------------------
+Detective : MissScarlett
+
+[THEORY]
+  Suspect : ProfPlum
+  Weapon  : Rope
+  Room    : Conservatory
+Evidence added:
+ + suspect: ProfPlum
+ + weapon: Rope
+ + room: Conservatory
+
+[REFUTATION]
+Refuted by : ColMustard
+Card shown : ProfPlum
+
+[DEDUCTION]
+Eliminated suspect: ProfPlum
+--------------------------------------------------
+
+
+*************** ROUND 7 ***************
+
+--------------------------------------------------
+SUGGESTION REPORT
+--------------------------------------------------
+Detective : ColMustard
+
+[THEORY]
+  Suspect : MrsPeacock
+  Weapon  : Rope
+  Room    : Ballroom
+Evidence added:
+ + suspect: MrsPeacock
+ + weapon: Rope
+ + room: Ballroom
+
+[REFUTATION]
+Refuted by : MrsWhite
+Card shown : (unknown)
+
+[DEDUCTION]
+Refutation occurred but no card information gained.
+--------------------------------------------------
+
+
+*************** ROUND 8 ***************
+
+--------------------------------------------------
+SUGGESTION REPORT
+--------------------------------------------------
+Detective : MrsWhite
+
+[THEORY]
+  Suspect : ColMustard
+  Weapon  : Candlestick
+  Room    : Study
+Evidence added:
+ + suspect: ColMustard
+ + weapon: Candlestick
+ + room: Study
+
+[REFUTATION]
+Refuted by : MrGreen
+Card shown : (unknown)
+
+[DEDUCTION]
+Refutation occurred but no card information gained.
+--------------------------------------------------
+
+
+*************** ROUND 9 ***************
+
+--------------------------------------------------
+SUGGESTION REPORT
+--------------------------------------------------
+Detective : MrGreen
+
+[THEORY]
+  Suspect : MrsPeacock
+  Weapon  : Knife
+  Room    : DiningRoom
+Evidence added:
+ + suspect: MrsPeacock
+ + weapon: Knife
+ + room: DiningRoom
+
+[REFUTATION]
+Refuted by : MrsPeacock
+Card shown : (unknown)
+
+[DEDUCTION]
+Refutation occurred but no card information gained.
+--------------------------------------------------
+
+
+*************** ROUND 10 ***************
+
+--------------------------------------------------
+SUGGESTION REPORT
+--------------------------------------------------
+Detective : MrsPeacock
+
+[THEORY]
+  Suspect : ColMustard
+  Weapon  : Pipe
+  Room    : DiningRoom
+Evidence added:
+ + suspect: ColMustard
+ + weapon: Pipe
+ + room: DiningRoom
+
+[REFUTATION]
+Refuted by : ProfPlum
+Card shown : (unknown)
+
+[DEDUCTION]
+Refutation occurred but no card information gained.
+--------------------------------------------------
+
+
+*************** ROUND 11 ***************
+
+--------------------------------------------------
+SUGGESTION REPORT
+--------------------------------------------------
+Detective : ProfPlum
+
+[THEORY]
+  Suspect : MrsWhite
+  Weapon  : Knife
+  Room    : Conservatory
+Evidence added:
+ + suspect: MrsWhite
+ + weapon: Knife
+ + room: Conservatory
+
+[REFUTATION]
+Refuted by : MrsWhite
+Card shown : (unknown)
+
+[DEDUCTION]
+Refutation occurred but no card information gained.
+--------------------------------------------------
+
+
+*************** ROUND 12 ***************
+
+--------------------------------------------------
+SUGGESTION REPORT
+--------------------------------------------------
+Detective : MissScarlett
+
+[THEORY]
+  Suspect : MrsPeacock
+  Weapon  : Knife
+  Room    : Lounge
+Evidence added:
+ + suspect: MrsPeacock
+ + weapon: Knife
+ + room: Lounge
+
+[REFUTATION]
+Refuted by : ColMustard
+Card shown : Lounge
+
+[DEDUCTION]
+Eliminated room: Lounge
+--------------------------------------------------
+
+
+*************** ROUND 13 ***************
+
+--------------------------------------------------
+SUGGESTION REPORT
+--------------------------------------------------
+Detective : ColMustard
+
+[THEORY]
+  Suspect : MrsPeacock
+  Weapon  : Knife
+  Room    : DiningRoom
+Evidence added:
+ + suspect: MrsPeacock
+ + weapon: Knife
+ + room: DiningRoom
+
+[REFUTATION]
+Refuted by : MrsWhite
+Card shown : (unknown)
+
+[DEDUCTION]
+Refutation occurred but no card information gained.
+--------------------------------------------------
+
+
+*************** ROUND 14 ***************
+
+--------------------------------------------------
+SUGGESTION REPORT
+--------------------------------------------------
+Detective : MrsWhite
+
+[THEORY]
+  Suspect : MrsPeacock
+  Weapon  : Wrench
+  Room    : Hall
+Evidence added:
+ + suspect: MrsPeacock
+ + weapon: Wrench
+ + room: Hall
+
+[REFUTATION]
+Refuted by : MrGreen
+Card shown : (unknown)
+
+[DEDUCTION]
+Refutation occurred but no card information gained.
+--------------------------------------------------
+
+
+*************** ROUND 15 ***************
+
+--------------------------------------------------
+SUGGESTION REPORT
+--------------------------------------------------
+Detective : MrGreen
+
+[THEORY]
+  Suspect : MrsWhite
+  Weapon  : Pipe
+  Room    : Conservatory
+Evidence added:
+ + suspect: MrsWhite
+ + weapon: Pipe
+ + room: Conservatory
+
+[REFUTATION]
+Refuted by : ProfPlum
+Card shown : (unknown)
+
+[DEDUCTION]
+Refutation occurred but no card information gained.
+--------------------------------------------------
+
+
+*************** ROUND 16 ***************
+
+--------------------------------------------------
+SUGGESTION REPORT
+--------------------------------------------------
+Detective : MrsPeacock
+
+[THEORY]
+  Suspect : MissScarlett
+  Weapon  : Pipe
+  Room    : Hall
+Evidence added:
+ + suspect: MissScarlett
+ + weapon: Pipe
+ + room: Hall
+
+[REFUTATION]
+Refuted by : ColMustard
+Card shown : (unknown)
+
+[DEDUCTION]
+Refutation occurred but no card information gained.
+--------------------------------------------------
+
+
+*************** ROUND 17 ***************
+
+--------------------------------------------------
+SUGGESTION REPORT
+--------------------------------------------------
+Detective : ProfPlum
+
+[THEORY]
+  Suspect : MrsPeacock
+  Weapon  : Pipe
+  Room    : Ballroom
+Evidence added:
+ + suspect: MrsPeacock
+ + weapon: Pipe
+ + room: Ballroom
+
+[REFUTATION]
+No refutation possible.
+
+[DEDUCTION]
+All elements gain suspicion weighting.
+--------------------------------------------------
+
+
+*************** ROUND 18 ***************
+
+--------------------------------------------------
+SUGGESTION REPORT
+--------------------------------------------------
+Detective : MrsWhite
+
+[THEORY]
+  Suspect : MrsPeacock
+  Weapon  : Pipe
+  Room    : Study
+Evidence added:
+ + suspect: MrsPeacock
+ + weapon: Pipe
+ + room: Study
+
+[REFUTATION]
+Refuted by : MissScarlett
+Card shown : Study
+
+[DEDUCTION]
+Eliminated room: Study
+--------------------------------------------------
+
+
+*************** ROUND 19 ***************
+
+--------------------------------------------------
+SUGGESTION REPORT
+--------------------------------------------------
+Detective : MrGreen
+
+[THEORY]
+  Suspect : MrsWhite
+  Weapon  : Pipe
+  Room    : Study
+Evidence added:
+ + suspect: MrsWhite
+ + weapon: Pipe
+ + room: Study
+
+[REFUTATION]
+Refuted by : MissScarlett
+Card shown : MrsWhite
+
+[DEDUCTION]
+No new eliminations.
+--------------------------------------------------
+
+
+*************** ROUND 20 ***************
+
+--------------------------------------------------
+SUGGESTION REPORT
+--------------------------------------------------
+Detective : MrsPeacock
+
+[THEORY]
+  Suspect : MrsWhite
+  Weapon  : Pipe
+  Room    : Study
+Evidence added:
+ + suspect: MrsWhite
+ + weapon: Pipe
+ + room: Study
+
+[REFUTATION]
+Refuted by : MissScarlett
+Card shown : MrsWhite
+
+[DEDUCTION]
+No new eliminations.
+--------------------------------------------------
+
+
+*************** ROUND 21 ***************
+
+--------------------------------------------------
+SUGGESTION REPORT
+--------------------------------------------------
+Detective : ProfPlum
+
+[THEORY]
+  Suspect : MrsPeacock
+  Weapon  : Pipe
+  Room    : Kitchen
+Evidence added:
+ + suspect: MrsPeacock
+ + weapon: Pipe
+ + room: Kitchen
+
+[REFUTATION]
+Refuted by : MrGreen
+Card shown : (unknown)
+
+[DEDUCTION]
+Refutation occurred but no card information gained.
+--------------------------------------------------
+
+
+======================================
+ ACCUSATION
+======================================
+Accuser: MissScarlett
+Suspected Murderer: MrsPeacock
+Weapon Used       : Pipe
+Crime Scene       : BilliardRoom
+--------------------------------------
+CASE SOLVED
+
+The murderer is MrsPeacock, who used the Pipe in the BilliardRoom.
+
+======================================
+
+
+======================================
+ AI FINAL DEDUCTION
+======================================
+Murderer : MrsPeacock
+Weapon   : Pipe
+Room     : DiningRoom
+
+Confidence:
+Suspects             : 18
+Weapons              : 18
+Rooms                : 10

@@ -1,0 +1,106 @@
+
+======================================
+ INFORMATION
+======================================
+%AUTHOR: Caitlin van Goeverden
+clear(print_given).
+set(binary_res).
+set(detailed_history).
+clear(print_kept).
+clear(print_back_sub).
+assign(max_seconds,10).
+assign(stats_level,0).
+formula_list(usable).
+
+======================================
+ ENTITIES
+======================================
+Player(MissScarlett) & Player(ColMustard) & Player(MrsWhite) & Player(MrGreen) & Player(MrsPeacock) & Player(ProfPlum).
+Suspect(MissScarlett) & Suspect(ColMustard) & Suspect(MrsWhite) & Suspect(MrGreen) & Suspect(MrsPeacock) & Suspect(ProfPlum).
+Weapon(Knife) & Weapon(Candlestick) & Weapon(Revolver) & Weapon(Pipe) & Weapon(Rope) & Weapon(Wrench).
+Room(Library) & Room(Conservatory) & Room(Kitchen) & Room(DiningRoom) & Room(Hall) & Room(Ballroom) & Room(BilliardRoom) & Room(Lounge) & Room(Study).
+Cardholder(MissScarlett) & Cardholder(ColMustard) & Cardholder(MrsWhite) & Cardholder(MrGreen) & Cardholder(MrsPeacock) & Cardholder(ProfPlum) & Cardholder(Casefile).
+
+======================================
+ EQUALITY RULES
+======================================
+Equals(MissScarlett,MissScarlett) & -Equals(MissScarlett,ColMustard) & -Equals(MissScarlett,MrsWhite) & -Equals(MissScarlett,MrGreen) & -Equals(MissScarlett,MrsPeacock) & -Equals(MissScarlett,ProfPlum).
+-Equals(ColMustard,MissScarlett) & Equals(ColMustard,ColMustard) & -Equals(ColMustard,MrsWhite) & -Equals(ColMustard,MrGreen) & -Equals(ColMustard,MrsPeacock) & -Equals(ColMustard,ProfPlum).
+-Equals(MrsWhite,MissScarlett) & -Equals(MrsWhite,ColMustard) & Equals(MrsWhite,MrsWhite) & -Equals(MrsWhite,MrGreen) & -Equals(MrsWhite,MrsPeacock) & -Equals(MrsWhite,ProfPlum).
+-Equals(MrGreen,MissScarlett) & -Equals(MrGreen,ColMustard) & -Equals(MrGreen,MrsWhite) & Equals(MrGreen,MrGreen) & -Equals(MrGreen,MrsPeacock) & -Equals(MrGreen,ProfPlum).
+-Equals(MrsPeacock,MissScarlett) & -Equals(MrsPeacock,ColMustard) & -Equals(MrsPeacock,MrsWhite) & -Equals(MrsPeacock,MrGreen) & Equals(MrsPeacock,MrsPeacock) & -Equals(MrsPeacock,ProfPlum).
+-Equals(ProfPlum,MissScarlett) & -Equals(ProfPlum,ColMustard) & -Equals(ProfPlum,MrsWhite) & -Equals(ProfPlum,MrGreen) & -Equals(ProfPlum,MrsPeacock) & Equals(ProfPlum,ProfPlum).
+-Equals(MissScarlett,Knife) & -Equals(MissScarlett,Candlestick) & -Equals(MissScarlett,Revolver) & -Equals(MissScarlett,Pipe) & -Equals(MissScarlett,Rope) & -Equals(MissScarlett,Wrench).
+-Equals(ColMustard,Knife) & -Equals(ColMustard,Candlestick) & -Equals(ColMustard,Revolver) & -Equals(ColMustard,Pipe) & -Equals(ColMustard,Rope) & -Equals(ColMustard,Wrench).
+-Equals(MrsWhite,Knife) & -Equals(MrsWhite,Candlestick) & -Equals(MrsWhite,Revolver) & -Equals(MrsWhite,Pipe) & -Equals(MrsWhite,Rope) & -Equals(MrsWhite,Wrench).
+-Equals(MrGreen,Knife) & -Equals(MrGreen,Candlestick) & -Equals(MrGreen,Revolver) & -Equals(MrGreen,Pipe) & -Equals(MrGreen,Rope) & -Equals(MrGreen,Wrench).
+-Equals(MrsPeacock,Knife) & -Equals(MrsPeacock,Candlestick) & -Equals(MrsPeacock,Revolver) & -Equals(MrsPeacock,Pipe) & -Equals(MrsPeacock,Rope) & -Equals(MrsPeacock,Wrench).
+-Equals(ProfPlum,Knife) & -Equals(ProfPlum,Candlestick) & -Equals(ProfPlum,Revolver) & -Equals(ProfPlum,Pipe) & -Equals(ProfPlum,Rope) & -Equals(ProfPlum,Wrench).
+-Equals(MissScarlett,Library) & -Equals(MissScarlett,Conservatory) & -Equals(MissScarlett,Kitchen) & -Equals(MissScarlett,DiningRoom) & -Equals(MissScarlett,Hall) & -Equals(MissScarlett,Ballroom) & -Equals(MissScarlett,BilliardRoom) & -Equals(MissScarlett,Lounge) & -Equals(MissScarlett,Study).
+-Equals(ColMustard,Library) & -Equals(ColMustard,Conservatory) & -Equals(ColMustard,Kitchen) & -Equals(ColMustard,DiningRoom) & -Equals(ColMustard,Hall) & -Equals(ColMustard,Ballroom) & -Equals(ColMustard,BilliardRoom) & -Equals(ColMustard,Lounge) & -Equals(ColMustard,Study).
+-Equals(MrsWhite,Library) & -Equals(MrsWhite,Conservatory) & -Equals(MrsWhite,Kitchen) & -Equals(MrsWhite,DiningRoom) & -Equals(MrsWhite,Hall) & -Equals(MrsWhite,Ballroom) & -Equals(MrsWhite,BilliardRoom) & -Equals(MrsWhite,Lounge) & -Equals(MrsWhite,Study).
+-Equals(MrGreen,Library) & -Equals(MrGreen,Conservatory) & -Equals(MrGreen,Kitchen) & -Equals(MrGreen,DiningRoom) & -Equals(MrGreen,Hall) & -Equals(MrGreen,Ballroom) & -Equals(MrGreen,BilliardRoom) & -Equals(MrGreen,Lounge) & -Equals(MrGreen,Study).
+-Equals(MrsPeacock,Library) & -Equals(MrsPeacock,Conservatory) & -Equals(MrsPeacock,Kitchen) & -Equals(MrsPeacock,DiningRoom) & -Equals(MrsPeacock,Hall) & -Equals(MrsPeacock,Ballroom) & -Equals(MrsPeacock,BilliardRoom) & -Equals(MrsPeacock,Lounge) & -Equals(MrsPeacock,Study).
+-Equals(ProfPlum,Library) & -Equals(ProfPlum,Conservatory) & -Equals(ProfPlum,Kitchen) & -Equals(ProfPlum,DiningRoom) & -Equals(ProfPlum,Hall) & -Equals(ProfPlum,Ballroom) & -Equals(ProfPlum,BilliardRoom) & -Equals(ProfPlum,Lounge) & -Equals(ProfPlum,Study).
+-Equals(Knife,MissScarlett) & -Equals(Knife,ColMustard) & -Equals(Knife,MrsWhite) & -Equals(Knife,MrGreen) & -Equals(Knife,MrsPeacock) & -Equals(Knife,ProfPlum).
+-Equals(Candlestick,MissScarlett) & -Equals(Candlestick,ColMustard) & -Equals(Candlestick,MrsWhite) & -Equals(Candlestick,MrGreen) & -Equals(Candlestick,MrsPeacock) & -Equals(Candlestick,ProfPlum).
+-Equals(Revolver,MissScarlett) & -Equals(Revolver,ColMustard) & -Equals(Revolver,MrsWhite) & -Equals(Revolver,MrGreen) & -Equals(Revolver,MrsPeacock) & -Equals(Revolver,ProfPlum).
+-Equals(Pipe,MissScarlett) & -Equals(Pipe,ColMustard) & -Equals(Pipe,MrsWhite) & -Equals(Pipe,MrGreen) & -Equals(Pipe,MrsPeacock) & -Equals(Pipe,ProfPlum).
+-Equals(Rope,MissScarlett) & -Equals(Rope,ColMustard) & -Equals(Rope,MrsWhite) & -Equals(Rope,MrGreen) & -Equals(Rope,MrsPeacock) & -Equals(Rope,ProfPlum).
+-Equals(Wrench,MissScarlett) & -Equals(Wrench,ColMustard) & -Equals(Wrench,MrsWhite) & -Equals(Wrench,MrGreen) & -Equals(Wrench,MrsPeacock) & -Equals(Wrench,ProfPlum).
+Equals(Knife,Knife) & -Equals(Knife,Candlestick) & -Equals(Knife,Revolver) & -Equals(Knife,Pipe) & -Equals(Knife,Rope) & -Equals(Knife,Wrench).
+-Equals(Candlestick,Knife) & Equals(Candlestick,Candlestick) & -Equals(Candlestick,Revolver) & -Equals(Candlestick,Pipe) & -Equals(Candlestick,Rope) & -Equals(Candlestick,Wrench).
+-Equals(Revolver,Knife) & -Equals(Revolver,Candlestick) & Equals(Revolver,Revolver) & -Equals(Revolver,Pipe) & -Equals(Revolver,Rope) & -Equals(Revolver,Wrench).
+-Equals(Pipe,Knife) & -Equals(Pipe,Candlestick) & -Equals(Pipe,Revolver) & Equals(Pipe,Pipe) & -Equals(Pipe,Rope) & -Equals(Pipe,Wrench).
+-Equals(Rope,Knife) & -Equals(Rope,Candlestick) & -Equals(Rope,Revolver) & -Equals(Rope,Pipe) & Equals(Rope,Rope) & -Equals(Rope,Wrench).
+-Equals(Wrench,Knife) & -Equals(Wrench,Candlestick) & -Equals(Wrench,Revolver) & -Equals(Wrench,Pipe) & -Equals(Wrench,Rope) & Equals(Wrench,Wrench).
+-Equals(Knife,Library) & -Equals(Knife,Conservatory) & -Equals(Knife,Kitchen) & -Equals(Knife,DiningRoom) & -Equals(Knife,Hall) & -Equals(Knife,Ballroom) & -Equals(Knife,BilliardRoom) & -Equals(Knife,Lounge) & -Equals(Knife,Study).
+-Equals(Candlestick,Library) & -Equals(Candlestick,Conservatory) & -Equals(Candlestick,Kitchen) & -Equals(Candlestick,DiningRoom) & -Equals(Candlestick,Hall) & -Equals(Candlestick,Ballroom) & -Equals(Candlestick,BilliardRoom) & -Equals(Candlestick,Lounge) & -Equals(Candlestick,Study).
+-Equals(Revolver,Library) & -Equals(Revolver,Conservatory) & -Equals(Revolver,Kitchen) & -Equals(Revolver,DiningRoom) & -Equals(Revolver,Hall) & -Equals(Revolver,Ballroom) & -Equals(Revolver,BilliardRoom) & -Equals(Revolver,Lounge) & -Equals(Revolver,Study).
+-Equals(Pipe,Library) & -Equals(Pipe,Conservatory) & -Equals(Pipe,Kitchen) & -Equals(Pipe,DiningRoom) & -Equals(Pipe,Hall) & -Equals(Pipe,Ballroom) & -Equals(Pipe,BilliardRoom) & -Equals(Pipe,Lounge) & -Equals(Pipe,Study).
+-Equals(Rope,Library) & -Equals(Rope,Conservatory) & -Equals(Rope,Kitchen) & -Equals(Rope,DiningRoom) & -Equals(Rope,Hall) & -Equals(Rope,Ballroom) & -Equals(Rope,BilliardRoom) & -Equals(Rope,Lounge) & -Equals(Rope,Study).
+-Equals(Wrench,Library) & -Equals(Wrench,Conservatory) & -Equals(Wrench,Kitchen) & -Equals(Wrench,DiningRoom) & -Equals(Wrench,Hall) & -Equals(Wrench,Ballroom) & -Equals(Wrench,BilliardRoom) & -Equals(Wrench,Lounge) & -Equals(Wrench,Study).
+-Equals(Library,MissScarlett) & -Equals(Library,ColMustard) & -Equals(Library,MrsWhite) & -Equals(Library,MrGreen) & -Equals(Library,MrsPeacock) & -Equals(Library,ProfPlum).
+-Equals(Conservatory,MissScarlett) & -Equals(Conservatory,ColMustard) & -Equals(Conservatory,MrsWhite) & -Equals(Conservatory,MrGreen) & -Equals(Conservatory,MrsPeacock) & -Equals(Conservatory,ProfPlum).
+-Equals(Kitchen,MissScarlett) & -Equals(Kitchen,ColMustard) & -Equals(Kitchen,MrsWhite) & -Equals(Kitchen,MrGreen) & -Equals(Kitchen,MrsPeacock) & -Equals(Kitchen,ProfPlum).
+-Equals(DiningRoom,MissScarlett) & -Equals(DiningRoom,ColMustard) & -Equals(DiningRoom,MrsWhite) & -Equals(DiningRoom,MrGreen) & -Equals(DiningRoom,MrsPeacock) & -Equals(DiningRoom,ProfPlum).
+-Equals(Hall,MissScarlett) & -Equals(Hall,ColMustard) & -Equals(Hall,MrsWhite) & -Equals(Hall,MrGreen) & -Equals(Hall,MrsPeacock) & -Equals(Hall,ProfPlum).
+-Equals(Ballroom,MissScarlett) & -Equals(Ballroom,ColMustard) & -Equals(Ballroom,MrsWhite) & -Equals(Ballroom,MrGreen) & -Equals(Ballroom,MrsPeacock) & -Equals(Ballroom,ProfPlum).
+-Equals(BilliardRoom,MissScarlett) & -Equals(BilliardRoom,ColMustard) & -Equals(BilliardRoom,MrsWhite) & -Equals(BilliardRoom,MrGreen) & -Equals(BilliardRoom,MrsPeacock) & -Equals(BilliardRoom,ProfPlum).
+-Equals(Lounge,MissScarlett) & -Equals(Lounge,ColMustard) & -Equals(Lounge,MrsWhite) & -Equals(Lounge,MrGreen) & -Equals(Lounge,MrsPeacock) & -Equals(Lounge,ProfPlum).
+-Equals(Study,MissScarlett) & -Equals(Study,ColMustard) & -Equals(Study,MrsWhite) & -Equals(Study,MrGreen) & -Equals(Study,MrsPeacock) & -Equals(Study,ProfPlum).
+-Equals(Library,Knife) & -Equals(Library,Candlestick) & -Equals(Library,Revolver) & -Equals(Library,Pipe) & -Equals(Library,Rope) & -Equals(Library,Wrench).
+-Equals(Conservatory,Knife) & -Equals(Conservatory,Candlestick) & -Equals(Conservatory,Revolver) & -Equals(Conservatory,Pipe) & -Equals(Conservatory,Rope) & -Equals(Conservatory,Wrench).
+-Equals(Kitchen,Knife) & -Equals(Kitchen,Candlestick) & -Equals(Kitchen,Revolver) & -Equals(Kitchen,Pipe) & -Equals(Kitchen,Rope) & -Equals(Kitchen,Wrench).
+-Equals(DiningRoom,Knife) & -Equals(DiningRoom,Candlestick) & -Equals(DiningRoom,Revolver) & -Equals(DiningRoom,Pipe) & -Equals(DiningRoom,Rope) & -Equals(DiningRoom,Wrench).
+-Equals(Hall,Knife) & -Equals(Hall,Candlestick) & -Equals(Hall,Revolver) & -Equals(Hall,Pipe) & -Equals(Hall,Rope) & -Equals(Hall,Wrench).
+-Equals(Ballroom,Knife) & -Equals(Ballroom,Candlestick) & -Equals(Ballroom,Revolver) & -Equals(Ballroom,Pipe) & -Equals(Ballroom,Rope) & -Equals(Ballroom,Wrench).
+-Equals(BilliardRoom,Knife) & -Equals(BilliardRoom,Candlestick) & -Equals(BilliardRoom,Revolver) & -Equals(BilliardRoom,Pipe) & -Equals(BilliardRoom,Rope) & -Equals(BilliardRoom,Wrench).
+-Equals(Lounge,Knife) & -Equals(Lounge,Candlestick) & -Equals(Lounge,Revolver) & -Equals(Lounge,Pipe) & -Equals(Lounge,Rope) & -Equals(Lounge,Wrench).
+-Equals(Study,Knife) & -Equals(Study,Candlestick) & -Equals(Study,Revolver) & -Equals(Study,Pipe) & -Equals(Study,Rope) & -Equals(Study,Wrench).
+Equals(Library,Library) & -Equals(Library,Conservatory) & -Equals(Library,Kitchen) & -Equals(Library,DiningRoom) & -Equals(Library,Hall) & -Equals(Library,Ballroom) & -Equals(Library,BilliardRoom) & -Equals(Library,Lounge) & -Equals(Library,Study).
+-Equals(Conservatory,Library) & Equals(Conservatory,Conservatory) & -Equals(Conservatory,Kitchen) & -Equals(Conservatory,DiningRoom) & -Equals(Conservatory,Hall) & -Equals(Conservatory,Ballroom) & -Equals(Conservatory,BilliardRoom) & -Equals(Conservatory,Lounge) & -Equals(Conservatory,Study).
+-Equals(Kitchen,Library) & -Equals(Kitchen,Conservatory) & Equals(Kitchen,Kitchen) & -Equals(Kitchen,DiningRoom) & -Equals(Kitchen,Hall) & -Equals(Kitchen,Ballroom) & -Equals(Kitchen,BilliardRoom) & -Equals(Kitchen,Lounge) & -Equals(Kitchen,Study).
+-Equals(DiningRoom,Library) & -Equals(DiningRoom,Conservatory) & -Equals(DiningRoom,Kitchen) & Equals(DiningRoom,DiningRoom) & -Equals(DiningRoom,Hall) & -Equals(DiningRoom,Ballroom) & -Equals(DiningRoom,BilliardRoom) & -Equals(DiningRoom,Lounge) & -Equals(DiningRoom,Study).
+-Equals(Hall,Library) & -Equals(Hall,Conservatory) & -Equals(Hall,Kitchen) & -Equals(Hall,DiningRoom) & Equals(Hall,Hall) & -Equals(Hall,Ballroom) & -Equals(Hall,BilliardRoom) & -Equals(Hall,Lounge) & -Equals(Hall,Study).
+-Equals(Ballroom,Library) & -Equals(Ballroom,Conservatory) & -Equals(Ballroom,Kitchen) & -Equals(Ballroom,DiningRoom) & -Equals(Ballroom,Hall) & Equals(Ballroom,Ballroom) & -Equals(Ballroom,BilliardRoom) & -Equals(Ballroom,Lounge) & -Equals(Ballroom,Study).
+-Equals(BilliardRoom,Library) & -Equals(BilliardRoom,Conservatory) & -Equals(BilliardRoom,Kitchen) & -Equals(BilliardRoom,DiningRoom) & -Equals(BilliardRoom,Hall) & -Equals(BilliardRoom,Ballroom) & Equals(BilliardRoom,BilliardRoom) & -Equals(BilliardRoom,Lounge) & -Equals(BilliardRoom,Study).
+-Equals(Lounge,Library) & -Equals(Lounge,Conservatory) & -Equals(Lounge,Kitchen) & -Equals(Lounge,DiningRoom) & -Equals(Lounge,Hall) & -Equals(Lounge,Ballroom) & -Equals(Lounge,BilliardRoom) & Equals(Lounge,Lounge) & -Equals(Lounge,Study).
+-Equals(Study,Library) & -Equals(Study,Conservatory) & -Equals(Study,Kitchen) & -Equals(Study,DiningRoom) & -Equals(Study,Hall) & -Equals(Study,Ballroom) & -Equals(Study,BilliardRoom) & -Equals(Study,Lounge) & Equals(Study,Study).
+
+======================================
+ GAME RULES
+======================================
+all w (Weapon(w) -> Card(w)).
+all r (Room(r) -> Card(r)).
+all s (Suspect(s) -> Card(s)).
+all p c (HasCard(p,c) -> (Cardholder(p) & Card(c))).
+all p1 p2 c ((HasCard(p1,c) & -Equals(p1,p2) & Card(c) & Cardholder(p1) & Cardholder(p2)) -> -HasCard(p2,c)).
+all x1 x2 c1 c2 ((Cardholder(x1) & Cardholder(x2)& Card(c1) & Card(c2) & -Equals(x1,x2)) -> -Equals(c1,c2)).
+all k w r (Murder(k,w,r) <-> (Suspect(k) & Weapon(w) & Room(r) & HasCard(Casefile, k) & HasCard(Casefile, w) & HasCard(Casefile, r))).
+all p1 p2 c1 c2 ((Cardholder(p1) & Cardholder(p2) & Card(c1) & Card(c2) & HasCard(p1,c1) & HasCard(p2,c2) & -Equals(p1,p2)) -> -Equals(c1,c2)).
+all p1 p2 c1 c2 ((Cardholder(p1) & Cardholder(p2) & Card(c1) & Card(c2) & HasCard(p1,c1) & HasCard(p2,c2) & -Equals(c1,c2)) -> -Equals(p1,p2)).
+all k w r ((HasCard(Casefile, w) & HasCard(Casefile,k) & HasCard(Casefile, r) & Weapon(k) & Weapon(w) & Weapon(r)) -> (Equals(k,w) & Equals(k,r) & Equals(w,r))).
+all k w r ((HasCard(Casefile, w) & HasCard(Casefile,k) & HasCard(Casefile, r) & Room(k) & Room(w) & Room(r)) -> (Equals(k,w) & Equals(k,r) & Equals(w,r))).
+all k w r ((HasCard(Casefile, w) & HasCard(Casefile,k) & HasCard(Casefile, r) & Suspect(k) & Suspect(w) & Suspect(r)) -> (Equals(k,w) & Equals(k,r) & Equals(w,r))).
+all c (Card(c) <-> (HasCard(MissScarlett, c) | HasCard(ColMustard, c) | HasCard(MrsWhite, c) | HasCard(MrGreen, c) | HasCard(MrsPeacock, c) | HasCard(ProfPlum, c) | HasCard(Casefile, c))).
